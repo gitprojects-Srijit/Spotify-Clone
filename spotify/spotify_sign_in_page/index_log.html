@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Log-in</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="login-page">
+        <div class="login-card">
+            <div style="display: flex; justify-content: center; align-items: center; color: white; gap: 10px;">
+                <!-- <img src="logo.svg" alt="Spotify logo" id="logo"> -->
+                <h1 style="margin-top: -8px;">Log in to Spotify</h1>
+            </div>
+            <input type="text" id="username" placeholder="Email or username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-button"><a style="text-decoration: none;color: black;" href="http://127.0.0.1:5500/index.html">Log In</a></button>
+            <p id="forgot-password"><a href="#">Forgot your password?</a></p>
+            <hr style="border: 1px solid #474646;">
+            <p id="no-account">Don't have an account? <a style="color: #1ED760;" href="http://127.0.0.1:5500/Spotify_sign_up_page/index_sign.html"><span id="sign-up-link">Sign up for Spotify</span></a></p>    
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>

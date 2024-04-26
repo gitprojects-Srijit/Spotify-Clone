@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.left {
+    width: 25vw;
+    padding: 8px;
+}
+
+.right {
+    width: 75vw;
+    margin: 16px 0;
+    position: relative;
+}
+
+.home{
+    padding: 20px 25px;
+}
+
+.logo{
+    margin-left: -10px;
+}
+
+.logo img{
+    height: 30px;
+}
+
+.home ul li {
+    width: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-top: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.librarry {
+    min-height: 71vh;
+    position: relative;
+}
+
+.lib{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    padding-top: 14px;
+    padding: 14px 14px;
+    font-weight: 700;
+    font-size: 10px;
+    color: #bab6b6;
+    cursor: pointer;
+}
+
+.heading:hover{
+    color: white;
+}
+
+.heading img {
+    width: 23px;
+}
+
+.createlist{
+    margin-right: 8px;
+}
+
+.createlist button{
+    filter: invert(1);
+    height: 28px;
+    width: 29px;
+    padding: 0px;
+    border: none;
+    border-radius: 25px;
+    background-color: #23212100;
+    cursor: pointer;
+}
+
+.createlist button:hover{
+    background-color: white;
+}
+
+.createlist img{
+    height: 26px;
+    width: 17px;
+}
+
+.songlist{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 15px;
+    overflow-y: scroll;
+    max-height: 45vh;
+    background-color: #3130304f;
+}
+
+.language{
+    padding: 10px;
+    margin: 0px 30px;
+}
+
+.langimg{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 6px;
+    align-items: center;
+}
+
+.language button{
+    filter: invert(1);
+    height: 28px;
+    width: 29px;
+    padding: 0px;
+    border: none;
+    border-radius: 25px;
+    background-color: #23212100;
+    cursor: pointer;
+}
+
+.langimg img{
+    height: 28px;
+    width: 20px;
+}
+
+.footer {
+    display: flex;
+    font-size: 11px;
+    color: grey;
+    gap: 6px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.footer a {
+    color: gray;
+}
+
+.footer a:hover{
+    color: white;
+}
+
+.nav {
+    margin-top: 3.5px;
+}
+
+.nav img {
+    width: 16px;
+}
+
+.leftbtn {
+    background-color: rgb(17 17 17);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 12px;
+}
+
+.rightbtn {
+    background-color: rgb(17 17 17);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 12px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34 34 34 / 48%);
+    padding: 7px;
+    height: 45px;
+}
+
+.header>* {
+    padding: 0;
+}
+
+.spotifyplaylist {
+    padding: 14px;
+}
+
+.cardcontainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 15px;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.card {
+    width: 163px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(26, 26, 26);
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: rgb(104 103 103 / 21%);
+}
+
+.card>* {
+    padding-top: 8px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.play {
+    position: absolute;
+    top: 130px;
+    right: 22px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.buttons>* {
+    margin: 0 12px;
+}
+
+.signupbtn {
+    font-size: 16px;
+    background-color: rgb(34 34 34 / 0%);
+    color: #bab6b6;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.signupbtn:hover {
+    font-size: 1.01rem;
+    color: white;
+}
+
+.loginbtn {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 40px;
+    color: black;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 85px;
+}
+
+.loginbtn:hover {
+    font-weight: bold;
+    padding: 12px 12px;
+}
+
+.playbar{
+    height: 55px;
+    left: 26px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0px;
+    background-color:rgb(24 25 24 / 70%);
+    width: 90%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 215px;
+}
+
+.playbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.playbuttons button{
+    filter: invert(1);
+    height: 28px;
+    width: 29px;
+    padding: 0px;
+    border: none;
+    border-radius: 25px;
+    background-color: #23212100;
+    cursor: pointer;
+}
+
+.playbuttons button:hover{
+    background-color: white;
+}
+
+.playbuttons img{
+    height: 26px;
+    width: 17px;
+}
+
+.songtime{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+}
+
+.songtime button{
+    filter: invert(1);
+    height: 28px;
+    width: 29px;
+    padding: 0px;
+    border: none;
+    border-radius: 25px;
+    background-color: #23212100;
+    cursor: pointer;
+}
+
+.songtime button:hover{
+    background-color: white;
+}
+
+.songtime img{
+    height: 26px;
+    width: 17px;
+}
+
+.songinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.songinfo ul{
+    list-style-type: none;
+}
+
+.songinfo ul li{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.songimg img:hover{
+    cursor: pointer;
+}
+
+.fav button{
+    filter: invert(1);
+    height: 28px;
+    width: 29px;
+    padding: 0px;
+    border: none;
+    border-radius: 25px;
+    background-color: #23212100;
+    cursor: pointer;
+}
+
+.fav img{
+    height: 26px;
+    width: 17px;
+}
+
+.fav button:hover{
+    background-color: white;
+}

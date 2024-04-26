@@ -1,0 +1,61 @@
+body {
+    background-color: #1E1E1E;
+}
+
+#login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+}
+
+.login-card {
+    background-color: #141212;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#logo {
+    width: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+input {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 95.2%;
+}
+
+button {
+    background-color: #1ED760;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #2D2D2D;
+    cursor: pointer;
+    width: 100%;
+}
+
+p {
+    color: #777;
+    margin: 0;
+    text-align: center;
+}
+
+#forgot-password {
+    margin-top: 25px;
+    color: white;
+}
+
+#no-account {
+    margin-top: 20px;
+}
+
+#sign-up-link {
+    color: #1ED760;
+    cursor: pointer;
+}
